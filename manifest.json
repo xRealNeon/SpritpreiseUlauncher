@@ -1,0 +1,55 @@
+{
+    "required_api_version": "^2.0.0",
+    "name": "Spritpreise",
+    "description": "Extension Description",
+    "developer_name": "NeoCode",
+    "icon": "images/icon.png",
+    "options": {
+      "query_debounce": 0.3
+    },
+    "preferences": [
+      {
+        "id": "sp_kw",
+        "type": "keyword",
+        "name": "Spritpreise",
+        "description": "Spritpreise öffnungswort",
+        "default_value": "sp"
+      },
+      {
+        "id": "type",
+        "type": "select",
+        "name": "Kraftstoffart",
+        "description": "Die Kraftstoffart von deinem Auto",
+        "default_value": "Super",
+        "options": ["Super", "Super_E10", "Diesel", "Erdgas"]
+      },
+      {
+        "id": "consumption",
+        "type": "text",
+        "name": "Durchschnittlicher Verbrauch",
+        "description": "Der durchschnittlicher Verbrauch von deinem Auto",
+        "default_value": "8"
+      },
+      {
+        "id": "tank",
+        "type": "text",
+        "name": "Tankvolumen",
+        "description": "Das Tankvolumen von deinem Auto",
+        "default_value": "60"
+      },
+      {
+        "id": "lat",
+        "type": "text",
+        "name": "Breitengrad",
+        "description": "Breitengrad (Schreibe auto für automatische Erkennung via IP)",
+        "default_value": "auto"
+      },
+      {
+        "id": "long",
+        "type": "text",
+        "name": "Längengrad",
+        "description": "Längengrad (Schreibe auto für automatische Erkennung via IP)",
+        "default_value": "auto"
+      }
+    ]
+  }
